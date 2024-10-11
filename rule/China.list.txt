@@ -1,0 +1,95 @@
+# 万达
+DOMAIN-SUFFIX,wanda.cn
+DOMAIN-SUFFIX,wandawic.cn
+DOMAIN-SUFFIX,wandawic.com
+# 伊利
+DOMAIN-SUFFIX,yili.com
+DOMAIN-SUFFIX,digitalyili.com
+DOMAIN-SUFFIX,jiankangyouyi.com
+# 小蚕霸王餐
+DOMAIN-SUFFIX,1rtb.com
+DOMAIN-SUFFIX,xinyifm.cn
+DOMAIN-SUFFIX,xiaocantech.com
+DOMAIN-SUFFIX,realtech-inc.com
+# 红果短剧
+DOMAIN-SUFFIX,qznovelvod.com
+# 习酒
+DOMAIN-SUFFIX,exijiu.cn
+DOMAIN-SUFFIX,exijiu.com
+DOMAIN-SUFFIX,gzxijiu.com
+# 上汽大众
+DOMAIN-SUFFIX,csvw.com
+DOMAIN-SUFFIX,svw-volkswagen.com
+# 龙湖
+DOMAIN-SUFFIX,longhu.net
+DOMAIN-SUFFIX,longfor.com
+# SuperVIP
+DOMAIN-SUFFIX,sharepoint.cn
+DOMAIN-SUFFIX,lenglengyu.com
+# AssppPro
+DOMAIN-SUFFIX,localhost.direct
+# 蜜雪冰城
+DOMAIN-SUFFIX,mxbc.net
+DOMAIN-SUFFIX,shujupie.com
+# 蒙牛
+DOMAIN-SUFFIX,weimob.com
+DOMAIN-SUFFIX,weimobdc.com
+DOMAIN-SUFFIX,weimobwmc.com
+# 吉利汽车
+DOMAIN-SUFFIX,geely.com
+DOMAIN-SUFFIX,halvie.com
+DOMAIN-SUFFIX,geely-test.com
+# 飞凡汽车
+DOMAIN-SUFFIX,rauto.com
+DOMAIN-SUFFIX,risingauto.com
+# 华住会
+DOMAIN-SUFFIX,cl2009.com
+DOMAIN-SUFFIX,huazhu.com
+DOMAIN-SUFFIX,xinstall.top
+# 杰士邦
+DOMAIN-SUFFIX,ixiliu.cn
+DOMAIN-SUFFIX,a-touchin.com
+# 富友缴费通
+DOMAIN-SUFFIX,fuioupay.com
+# iOS逆向助手
+DOMAIN-SUFFIX,guyubao.com
+# 极氮
+DOMAIN-SUFFIX,zeekrlife.com
+DOMAIN-SUFFIX,tlivesource.com
+DOMAIN-SUFFIX,haohanpower.tech
+# 泡泡玛特
+DOMAIN-SUFFIX,paquapp.com
+DOMAIN-SUFFIX,wxgateway.com
+# 福田e家
+DOMAIN-SUFFIX,sq581.com
+DOMAIN-SUFFIX,foton.com.cn
+DOMAIN-SUFFIX,365autogo.com
+DOMAIN-SUFFIX,csjplatform.com
+DOMAIN-SUFFIX,feedcoopapi.com
+# 东风日产
+DOMAIN-SUFFIX,getui.net
+DOMAIN-SUFFIX,gepush.com
+DOMAIN-SUFFIX,venucia.com
+DOMAIN-SUFFIX,szlanyou.com
+DOMAIN-SUFFIX,dongfeng-nissan.com.cn
+# 王者荣耀
+DOMAIN-SUFFIX,gcloudgbs.com
+DOMAIN-SUFFIX,gcloudsvcs.com
+# 雪之下雪乃
+DOMAIN-SUFFIX,isgo.win
+DOMAIN-SUFFIX,xzxxn7.live
+# 望潮
+DOMAIN-SUFFIX,576tv.com
+DOMAIN-SUFFIX,tmuyun.com
+DOMAIN-SUFFIX,taizhou.com.cn
+# 大潮
+DOMAIN-SUFFIX,hoge.cn
+DOMAIN-SUFFIX,aihoge.com
+# 读嘉
+DOMAIN-SUFFIX,iyunxh.com
+DOMAIN-SUFFIX,jiaxingren.com
+# 毛铺草本荟
+DOMAIN-SUFFIX,jingjiu.com
+DOMAIN-SUFFIX,jingpai.com
+# 中国油价
+DOMAIN-SUFFIX,qiyoujiage.com
