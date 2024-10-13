@@ -4,7 +4,7 @@ Author: whydz
 Date: 2024-09-17 20:00
 
 Description:
-AppleID: 完成每日签到、观看教程任务。
+AppleID: 每日签到、观看教程
 
 环境变量说明:
   变量名: AppleID_data
