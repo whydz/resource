@@ -1,26 +1,38 @@
 /**
- * cron "5 0,18 * * *" YiLi.js
- * export YiLi='[{"mobile": "1", "openId": "1", "unionId": "1", "nickName": "1", "avatarUrl": "1", "yiliToken":"1"},{"mobile": "2", "openId": "2", "unionId": "2", "nickName": "2", "avatarUrl": "2", "yiliToken":"2"}]'//yiliToken是域名msmarket.msx.digitalyili.com的access-token
- * export YiLi_Open='true'//翻牌
+ * cron "5 0,18 * * *" Yili.js
+ * export Yili='[{"mobile": "1", "openId": "1", "unionId": "1", "nickName": "1", "avatarUrl": "1", "YiliToken":"1"},{"mobile": "2", "openId": "2", "unionId": "2", "nickName": "2", "avatarUrl": "2", "YiliToken":"2"}]'//YiliToken是域名msmarket.msx.digitalYili.com的access-token
+ * export Yili_Open='true'//翻牌
  */
 const $ = new Env('伊利-国庆')
-const YiLi = ($.isNode() ? JSON.parse(process.env.YiLi) : $.getjson("YiLi")) || [];
-const YiLi_Open = ($.isNode() ? process.env.YiLi_Open : $.getdata("YiLi_Open")) === 'true' || false;
+const Yili = ($.isNode() ? JSON.parse(process.env.Yili) : $.getjson("Yili")) || [];
+const Yili_Open = ($.isNode() ? process.env.Yili_Open : $.getdata("Yili_Open")) === 'true' || false;
 let Utils = undefined;
 let mobile = ''
 let token = ''
 let avatarUrl = ''
 let nickName = ''
-let yiliToken = ''
+let YiliToken = ''
 let openId = ''
 let unionId = ''
 let type = '2'
 let type1 = '2'
-let YiLi_Code = ['曹素裕邀您来伊利拿礼','林钟妹邀您来伊利拿礼','谢维红邀您来伊利拿礼','李成琼邀您来伊利拿礼','刘方邀您来伊利拿礼','厉春香邀您来伊利拿礼','詹海霞邀您来伊利拿礼','杨小妹邀您来伊利拿礼','孙凤萍邀您来伊利拿礼','高文香邀您来伊利拿礼']
+let Yili_Code = ["九九重阳岁岁安康", 
+    "国庆喜庆伊利添温馨", 
+    "恭喜郑钦文晋级武网8强", 
+    "殷加凤邀您来伊利拿礼", 
+    "晁秀云邀您来伊利拿礼", 
+    "许永侠邀您来伊利拿礼", 
+    "吕敏邀您来伊利拿礼", 
+    "秦海侠邀您来伊利拿礼", 
+    "郭敏邀您来伊利拿礼", 
+    "王委邀您来伊利拿礼", 
+    "缪传花邀您来伊利拿礼", 
+    "万玉琴邀您来伊利拿礼", 
+    "王天娜邀您来伊利拿礼"]
 let notice = ''
 !(async () => {
     if (typeof $request != "undefined") {
-        await getYiLiCookie();
+        await getYiliCookie();
     } else {
         await main();
     }
@@ -29,13 +41,13 @@ let notice = ''
 async function main() {
     console.log('作者：@xzxxn777\n频道：https://t.me/xzxxn777\n群组：https://t.me/xzxxn7777\n自用机场推荐：https://xn--diqv0fut7b.com\n')
     Utils = await loadUtils();
-    for (const item of YiLi) {
+    for (const item of Yili) {
         mobile = item.mobile;
         unionId = item.unionId;
         nickName = item.nickName;
         avatarUrl = item.avatarUrl;
         openId = item.openId;
-        yiliToken = item.yiliToken;
+        YiliToken = item.YiliToken;
         console.log(`用户：${mobile}开始任务`)
         let login = await commonPost('/v2/wechat/applet/set-user-info', {
             "headImg": avatarUrl,
@@ -47,7 +59,7 @@ async function main() {
         })
         if (login.code != 200) {
             console.log(login.message)
-            await sendMsg(`用户：${mobile}\nyiliToken已过期，请重新获取`);
+            await sendMsg(`用户：${mobile}\nYiliToken已过期，请重新获取`);
             continue
         }
         console.log(`登录成功`)
@@ -63,14 +75,14 @@ async function main() {
             let seePage = await commonGet(`/fragment/ticket/see-page?openId=${openId}`)
             console.log(`浏览：${seePage.message}`)
         }
-        for (let code of YiLi_Code) {
-            let authorize = await yiLiGet(`/developer/oauth2/buyer/authorize?app_key=zdcade261b48eb4c5e`)
+        for (let code of Yili_Code) {
+            let authorize = await YiliGet(`/developer/oauth2/buyer/authorize?app_key=zdcade261b48eb4c5e`)
             if (authorize.data) {
                 let inputCode = await commonGet(`/fragment/ticket/input-code?code=${encodeURIComponent(code)}&authorizationCode=${authorize.data}&openId=${openId}`)
                 console.log(`口令：${code} 兑换：${inputCode.message}`)
             } else {
                 console.log(authorize?.error?.msg)
-                await sendMsg(`用户：${mobile}\nyiliToken已过期，请重新获取`);
+                await sendMsg(`用户：${mobile}\nYiliToken已过期，请重新获取`);
             }
         }
         let ticketGet = await commonGet(`/fragment/ticket/get?openId=${openId}`)
@@ -82,7 +94,7 @@ async function main() {
         let cardInfo = await commonGet(`/fragmentActivity/fragment?activityId=2&openId=${openId}`)
         for (let card of cardInfo.data) {
             console.log(`卡片：${card.fragmentName} 数量：${card.num}`)
-            if (card.num > 1 && YiLi_Open) {
+            if (card.num > 1 && Yili_Open) {
                 for (let i = 1; i < card.num; i++) {
                     let openPrize = await commonGet(`/fragmentActivity/open-prize?fragmentId=${card.fragmentId}&activityId=2&openId=${openId}`)
                     console.log(`翻卡获得：${openPrize.data.prizeName}`)
@@ -96,37 +108,37 @@ async function main() {
     }
 }
 
-async function getYiLiCookie() {
-    const yiliToken = $request.headers["access-token"];
-    if (!yiliToken) {
+async function getYiliCookie() {
+    const YiliToken = $request.headers["access-token"];
+    if (!YiliToken) {
         return
     }
     const body = $.toObj($response.body);
     if (!body || !body.data) {
         return
     }
-    const newData = {"mobile": body.data.mobile, "openId": body.data.openId, "unionId": body.data.unionId, "nickName": body.data.nickName, "avatarUrl": body.data.avatarUrl, "yiliToken":yiliToken};
-    const index = YiLi.findIndex(e => e.mobile == newData.mobile);
+    const newData = {"mobile": body.data.mobile, "openId": body.data.openId, "unionId": body.data.unionId, "nickName": body.data.nickName, "avatarUrl": body.data.avatarUrl, "YiliToken":YiliToken};
+    const index = Yili.findIndex(e => e.mobile == newData.mobile);
     if (index !== -1) {
-        if (YiLi[index].yiliToken == newData.yiliToken) {
+        if (Yili[index].YiliToken == newData.YiliToken) {
             return
         } else {
-            YiLi[index] = newData;
-            console.log(newData.yiliToken)
-            $.msg($.name, `🎉用户${newData.mobile}更新yiliToken成功!`, ``);
+            Yili[index] = newData;
+            console.log(newData.YiliToken)
+            $.msg($.name, `🎉用户${newData.mobile}更新YiliToken成功!`, ``);
         }
     } else {
-        YiLi.push(newData)
-        console.log(newData.yiliToken)
+        Yili.push(newData)
+        console.log(newData.YiliToken)
         $.msg($.name, `🎉新增用户${newData.mobile}成功!`, ``);
     }
-    $.setjson(YiLi, "YiLi");
+    $.setjson(Yili, "Yili");
 }
 
-async function yiLiGet(url) {
+async function YiliGet(url) {
     return new Promise(resolve => {
         const options = {
-            url: `https://msmarket.msx.digitalyili.com${url}`,
+            url: `https://msmarket.msx.digitalYili.com${url}`,
             headers : {
                 'register-source': '',
                 'forward-appid': 'wx06af0ef532292cd3',
@@ -135,7 +147,7 @@ async function yiLiGet(url) {
                 'atv-page': '',
                 'scene': '1089',
                 'xweb_xhr': '1',
-                'access-token': yiliToken,
+                'access-token': YiliToken,
                 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 MicroMessenger/6.8.0(0x16080000) NetType/WIFI MiniProgramEnv/Mac MacWechat/WMPF MacWechat/3.8.7(0x13080712) XWEB/1191',
                 'tenant-id': '1559474730809618433',
                 'accept': '*/*',
@@ -169,7 +181,7 @@ async function commonPost(url, body) {
     let params = getParams();
     return new Promise(resolve => {
         const options = {
-            url: `https://wx-camp-180-shuangjie-api.mscampapi.digitalyili.com${url}`,
+            url: `https://wx-camp-180-shuangjie-api.mscampapi.digitalYili.com${url}`,
             headers : {
                 'content-type': 'application/json',
                 'xweb_xhr': '1',
@@ -212,7 +224,7 @@ async function commonGet(url) {
     let params = getParams();
     return new Promise(resolve => {
         const options = {
-            url: `https://wx-camp-180-shuangjie-api.mscampapi.digitalyili.com${url}`,
+            url: `https://wx-camp-180-shuangjie-api.mscampapi.digitalYili.com${url}`,
             headers : {
                 'content-type': 'application/json',
                 'xweb_xhr': '1',
