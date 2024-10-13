@@ -1,9 +1,9 @@
 /*
 new Env('AppleID');
-@Author: whydz
-@Date: 2024-09-17 20:00
+Author: whydz
+Date: 2024-09-17 20:00
 
-@Description:
+Description:
 AppleID: 完成每日签到、观看教程任务。
 
 环境变量说明:
