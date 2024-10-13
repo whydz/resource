@@ -51,6 +51,7 @@
       "repo": "",
       "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Foton.js",
       "icons": [
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Foton.png",
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Foton.png"]
     },
     {
