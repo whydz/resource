@@ -1,9 +1,9 @@
 /**
- * cron "43 2,11,20 * * *" HaiTian.js
- * export HaiTian='[{"id":"1","uuid":"1","token":"1","refreshToken":"1"},{"id":"2","uuid":"2","token":"2","refreshToken":"2"}]'
+ * cron "43 2,11,20 * * *" HADAY.js
+ * export HADAY='[{"id":"1","uuid":"1","token":"1","refreshToken":"1"},{"id":"2","uuid":"2","token":"2","refreshToken":"2"}]'
  */
 const $ = new Env('海天美味馆')
-const HaiTian = ($.isNode() ? JSON.parse(process.env.HaiTian) : $.getjson("HaiTian")) || [];
+const HADAY = ($.isNode() ? JSON.parse(process.env.HADAY) : $.getjson("HADAY")) || [];
 let shareCodeArr = []
 let token = ''
 let refreshToken = ''
@@ -21,7 +21,7 @@ let activityId = 'jfcj0827'
 
 async function main() {
     console.log('作者：@xzxxn777\n频道：https://t.me/xzxxn777\n群组：https://t.me/xzxxn7777\n自用机场推荐：https://xn--diqv0fut7b.com\n')
-    for (const item of HaiTian) {
+    for (const item of HADAY) {
         id = item.id;
         token = item.token;
         refreshToken = item.refreshToken;
@@ -35,11 +35,11 @@ async function main() {
                 refreshToken = refresh.refreshToken;
                 console.log('刷新成功')
                 const newData = {"id": id, "uuid": uuid, "token": token, "refreshToken":refreshToken};
-                const index = HaiTian.findIndex(e => e.id == id);
+                const index = HADAY.findIndex(e => e.id == id);
                 if (index !== -1) {
-                    HaiTian[index] = newData;
+                    HADAY[index] = newData;
                 }
-                $.setjson(HaiTian, "HaiTian");
+                $.setjson(HADAY, "HADAY");
             } else {
                 console.log('刷新失败')
                 await sendMsg(`用户：${id}\ntoken已过期，请重新获取`);
@@ -50,7 +50,7 @@ async function main() {
         console.log(`助力码：${shareCode.share_code}`)
         shareCodeArr.push(shareCode.share_code)
     }
-    for (const item of HaiTian) {
+    for (const item of HADAY) {
         id = item.id;
         token = item.token;
         refreshToken = item.refreshToken;
@@ -66,11 +66,11 @@ async function main() {
                 refreshToken = refresh.refreshToken;
                 console.log('刷新成功')
                 const newData = {"id": id, "uuid": uuid, "token": token, "refreshToken":refreshToken};
-                const index = HaiTian.findIndex(e => e.id == id);
+                const index = HADAY.findIndex(e => e.id == id);
                 if (index !== -1) {
-                    HaiTian[index] = newData;
+                    HADAY[index] = newData;
                 }
-                $.setjson(HaiTian, "HaiTian");
+                $.setjson(HADAY, "HADAY");
             } else {
                 console.log('刷新失败')
                 await sendMsg(`用户：${id}\ntoken已过期，请重新获取`);
@@ -199,21 +199,21 @@ async function getToken() {
     const token = body.access_token;
     const refreshToken = body.refresh_token;
     const newData = {"id": id, "uuid": uuid, "token": token, "refreshToken":refreshToken};
-    const index = HaiTian.findIndex(e => e.id == newData.id);
+    const index = HADAY.findIndex(e => e.id == newData.id);
     if (index !== -1) {
-        if (HaiTian[index].token == newData.token) {
+        if (HADAY[index].token == newData.token) {
             return
         } else {
-            HaiTian[index] = newData;
+            HADAY[index] = newData;
             console.log(newData.token)
             $.msg($.name, `🎉用户${newData.id}更新token成功!`, ``);
         }
     } else {
-        HaiTian.push(newData)
+        HADAY.push(newData)
         console.log(newData.token)
         $.msg($.name, `🎉新增用户${newData.id}成功!`, ``);
     }
-    $.setjson(HaiTian, "HaiTian");
+    $.setjson(HADAY, "HADAY");
 }
 
 async function commonGet(url) {
