@@ -1,14 +1,14 @@
 {
   "id": "whydz",
   "name": "自用脚本",
-  "author": "@whydz",
+  "author": "whydz",
   "icon": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/other/SakanaCloud.png",
   "repo": "",
   "apps": [
     {
       "id": "AppleID",
       "name": "AppleID",
-      "author": "@whydz",
+      "author": "whydz",
       "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png",
@@ -49,7 +49,7 @@
           "desc": "格式:手机号&密码 手机号&密码"
         }
       ],
-      "author": "@whydz",
+      "author": "whydz",
       "repo": "",
       "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Foton.js",
       "icons": [
@@ -78,10 +78,11 @@
           "desc": "格式:账号1&token1 账号2&token2"
         }
       ],
-      "author": "@whydz",
+      "author": "whydz",
       "repo": "",
       "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Haixing.js",
       "icons": [
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Haixing.png",
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Haixing.png"
        ]
     }
