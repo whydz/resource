@@ -1,6 +1,6 @@
 /**
- * cron "11 7,17 * * *" HaiXing.js
- * export HaiXing="账号1&token1 账号2&token2"
+ * cron "11 7,17 * * *" Haixing.js
+ * export Haixing="账号1&token1 账号2&token2"
  */
 const $ = new Env('海星');
 const notify = $.isNode() ? require('../sendNotify') : '';
