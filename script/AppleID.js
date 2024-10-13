@@ -1,10 +1,10 @@
 /*
-new Env('AppleID-苹果软件站');
+new Env('AppleID');
 @Author: Whydz
 @Date: 2024-09-17 20:00
 
 @Description:
-AppleID-苹果软件站: 完成每日签到、观看教程任务。
+AppleID: 完成每日签到、观看教程任务。
 
 环境变量说明:
   变量名: AppleID_data
