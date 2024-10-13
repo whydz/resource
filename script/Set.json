@@ -6,7 +6,7 @@
   "repo": "",
   "apps": [
     {
-      "id": "AppleID",
+      "id": "whydz_AppleID",
       "name": "AppleID",
       "author": "whydz",
       "repo": "",
@@ -15,7 +15,7 @@
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png"
       ],
       "keys": [
-        "iios_data"
+        "AppleID_data"
       ],
       "settings": [
         {
