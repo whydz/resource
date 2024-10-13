@@ -1,13 +1,13 @@
 /*
-new Env('iios-苹果软件站');
+new Env('AppleID-苹果软件站');
 @Author: Whydz
 @Date: 2024-09-17 20:00
 
 @Description:
-iios-苹果软件站: 完成每日签到、观看教程任务。
+AppleID-苹果软件站: 完成每日签到、观看教程任务。
 
 环境变量说明:
-  变量名: iios_data
+  变量名: AppleID_data
   
   格式:  [{"email":"xxx@qq.com","password":"123456"}, {"email":"xxx@qq.com","password":"123456"}];
 
@@ -17,7 +17,7 @@ BoxJs订阅地址:
 https://raw.githubusercontent.com/whydz/ios/refs/heads/main/script/Task.json
 
 [Script]
-cron "0 7 * * *" script-path=https://raw.githubusercontent.com/whydz/ios/refs/heads/main/script/iios.js, tag=iios日常任务
+cron "0 7 * * *" script-path=https://raw.githubusercontent.com/whydz/ios/refs/heads/main/script/AppleID.js, tag=AppleID日常任务
 
 
 ====================================
@@ -31,7 +31,7 @@ cron "0 7 * * *" script-path=https://raw.githubusercontent.com/whydz/ios/refs/he
 6、如果任何单位或个人认为此脚本可能涉嫌侵犯其权利，应及时通知并提供身份证明，所有权证明，我们将在收到认证文件确认后删除此脚本。
 7、所有直接或间接使用、查看此脚本的人均应该仔细阅读此声明。本人保留随时更改或补充此声明的权利。一旦您使用或复制了此脚本，即视为您已接受此免责声明。
  */
-const $ = new Env("iios-苹果软件站");
+const $ = new Env("AppleID-苹果软件站");
 $.CryptoJS = initCryptoJS();
 const notify = $.isNode() ? require('./sendNotify') : '';
 //-------------------- 一般不动变量区域 -------------------------------------
