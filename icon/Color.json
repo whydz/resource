@@ -1,6 +1,7 @@
 {"name":"whydz", "description":"自用图标", "icons":[
 {"name":"AlibabaCloud","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/AlibabaCloud.png"},
 {"name":"Amap","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/Amap.png"},
+{"name":"AppleID","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/AppleID.png"},
 {"name":"B612Camera","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/B612Camera.png"},
 {"name":"BaiduNetdisk","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/BaiduNetdisk.png"},
 {"name":"BaiduWenku","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/BaiduWenku.png"},
@@ -54,7 +55,6 @@
 {"name":"Yongpai","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/Yongpai.png"},
 {"name":"ZEEKR","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/ZEEKR.png"},
 {"name":"Zhihu","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/Zhihu.png"},
-{"name":"AppleID","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/app/AppleID.png"},
 {"name":"Apple","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/other/Apple.png"},
 {"name":"ChatGPT","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/other/ChatGPT.png"},
 {"name":"Final","url":"https://raw.githubusercontent.com/whydz/ios/main/icon/other/Final.png"}, 
