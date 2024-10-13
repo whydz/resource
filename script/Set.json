@@ -2,24 +2,22 @@
   "id": "whydz",
   "name": "自用脚本",
   "author": "whydz",
-  "icon": "https://raw.githubusercontent.com/whydz/ios/main/icon/other/SakanaCloud.png",
-  "repo": "https://github.com/whydz/ios",
+  "icon": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/other/SakanaCloud.png",
+  "repo": "",
   "apps": [
     {
-      "id": "iios",
-      "name": "iios-苹果软件站",
+      "id": "AppleID",
+      "name": "AppleID",
       "author": "whydz",
-      "repo": "https://github.com/whydz/ios",
+      "repo": "",
       "icons": [
-        "https://raw.githubusercontent.com/whydz/ios/refs/heads/main/icon/app/iios.png",
-        "https://raw.githubusercontent.com/whydz/ios/refs/heads/main/icon/app/iios.png"
-      ],
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png"],
       "keys": [
-        "iios_data"
+        "AppleID_data"
       ],
       "settings": [
         {
-          "id": "iios_data",
+          "id": "AppleID_data",
           "name": "账号信息",
           "val": null,
           "type": "textarea",
@@ -37,7 +35,7 @@
       "scripts": [
         {
           "name": "福田e家-手动执行",
-          "script": "https://raw.githubusercontent.com/whydz/ios/main/script/Foton.js"
+          "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Foton.js"
         }
       ],
       "settings": [
@@ -50,28 +48,26 @@
         }
       ],
       "author": "whydz",
-      "repo": "https://github.com/whydz/ios",
-      "script": "https://raw.githubusercontent.com/whydz/ios/main/script/Foton.js",
+      "repo": "",
+      "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Foton.js",
       "icons": [
-        "https://raw.githubusercontent.com/whydz/ios/main/icon/app/Foton.png",
-        "https://raw.githubusercontent.com/whydz/ios/main/icon/app/Foton.png"
-      ]
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Foton.png"]
     },
     {
-      "id": "HaiXing",
+      "id": "Haixing",
       "name": "海星",
       "keys": [
-        "HaiXing"
+        "Haixing"
       ],
       "scripts": [
         {
           "name": "海星-手动执行",
-          "script": "https://raw.githubusercontent.com/whydz/ios/refs/heads/main/script/HaiXing.js"
+          "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Haixing.js"
         }
       ],
       "settings": [
         {
-          "id": "HaiXing",
+          "id": "Haixing",
           "name": "账号token",
           "val": "",
           "type": "text",
@@ -79,12 +75,11 @@
         }
       ],
       "author": "whydz",
-      "repo": "https://github.com/whydz/ios",
-      "script": "https://raw.githubusercontent.com/whydz/ios/refs/heads/main/script/HaiXing.js",
+      "repo": "",
+      "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Haixing.js",
       "icons": [
-        "https://raw.githubusercontent.com/whydz/ios/refs/heads/main/icon/app/HaiXing.png",
-        "https://raw.githubusercontent.com/whydz/ios/refs/heads/main/icon/app/HaiXing.png"
-      ]
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Haixing.png"
+       ]
     }
   ]
 }
