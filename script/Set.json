@@ -11,7 +11,6 @@
       "author": "whydz",
       "repo": "",
       "icons": [
-        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png",
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png"],
       "keys": [
         "AppleID_data"
@@ -52,7 +51,6 @@
       "repo": "",
       "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Foton.js",
       "icons": [
-        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Foton.png",
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Foton.png"]
     },
     {
@@ -80,7 +78,6 @@
       "repo": "",
       "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Haixing.js",
       "icons": [
-        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Haixing.png",
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Haixing.png"
        ]
     }
