@@ -80,6 +80,7 @@
       "repo": "",
       "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Haixing.js",
       "icons": [
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Haixing.png",
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Haixing.png"
        ]
     }
