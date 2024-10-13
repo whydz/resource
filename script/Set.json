@@ -5,14 +5,14 @@
   "icon": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/other/SakanaCloud.png",
   "repo": "",
   "apps": [
-    {
-      "id": "whydz_iios",
-      "name": "iios",
-      "author": "whydz",
+ {
+      "id": "Leiyiyan_iios",
+      "name": "iios-苹果软件站",
+      "author": "@leiyiyan",
       "repo": "",
       "icons": [
-        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png",
-        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png"
+        "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/iios.png",
+        "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/iios.png"
       ],
       "keys": [
         "iios_data"
