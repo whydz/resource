@@ -6,13 +6,13 @@
   "repo": "",
   "apps": [
  {
-      "id": "Leiyiyan_iios",
-      "name": "iios-苹果软件站",
-      "author": "@leiyiyan",
+      "id": "AppleID",
+      "name": "AppleID",
+      "author": "whydz",
       "repo": "",
       "icons": [
-        "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/iios.png",
-        "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/iios.png"
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png",
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png"
       ],
       "keys": [
         "iios_data"
