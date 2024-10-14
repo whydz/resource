@@ -6,8 +6,8 @@
   "repo": "",
   "apps": [
    {
-      "id": "AppleID",
-      "name": "AppleID",
+      "id": "iios",
+      "name": "iios",
       "author": "whydz",
       "repo": "",
       "icons": [
@@ -19,7 +19,7 @@
       ],
       "settings": [
         {
-          "id": "AppleID",
+          "id": "iios",
           "name": "账号信息",
           "val": null,
           "type": "textarea",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "id": "Haixing",
+      "id": "HaiXing",
       "name": "海星",
       "keys": [
         "HaiXing"
@@ -71,7 +71,7 @@
       ],
       "settings": [
         {
-          "id": "Haixing",
+          "id": "HaiXing",
           "name": "账号token",
           "val": "",
           "type": "text",
