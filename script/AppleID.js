@@ -7,7 +7,7 @@ Description:
 AppleID: 每日签到、观看教程
 
 环境变量说明:
-  变量名: AppleID_data
+  变量名: iios_data
   
   格式:  [{"email":"xxx@qq.com","password":"123456"}, {"email":"xxx@qq.com","password":"123456"}];
 
