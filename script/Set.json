@@ -5,7 +5,7 @@
   "icon": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/other/SakanaCloud.png",
   "repo": "",
   "apps": [
- {
+   {
       "id": "AppleID",
       "name": "AppleID",
       "author": "whydz",
