@@ -6,13 +6,13 @@
   "repo": "",
   "apps": [
    {
-     "id": "AppleID",
-     "name": "AppleID",
-     "author": "whydz",
-     "repo": "",
-     "icons": [
-     "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png",
-     "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png"
+      "id": "AppleID",
+      "name": "AppleID",
+      "author": "whydz",
+      "repo": "",
+      "icons": [
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png",
+        "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png"
       ],
       "keys": [
         "AppleID_data"
