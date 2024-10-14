@@ -1,16 +1,16 @@
 /*
 new Env('星妈优选');
-@Author: Leiyiyan
-@Date: 2024-10-08 15:05
+Author: whydz
+Date: 2024-10-08 15:05
 
-@Description:
+Description:
 星妈优选小程序 每日签到、任务
 
 图标： https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/MomsChoice.png
 
 [Script]
-http-response ^https?:\/\/www\.feihevip\.com\/api\/starMember\/getMemberInfo script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/MomsChoice/MomsChoice.js, requires-body=true, timeout=60, tag=星妈优选获取Cookie
-cron "30 0 * * *" script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/MomsChoice/MomsChoice.js, tag=星妈优选日常任务
+http-response ^https?:\/\/www\.feihevip\.com\/api\/starMember\/getMemberInfo script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/MomsChoice.js, requires-body=true, timeout=60, tag=星妈优选获取Cookie
+cron "30 0 * * *" script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/MomsChoice.js, tag=星妈优选日常任务
 
 [MITM]
 hostname = www.feihevip.com
