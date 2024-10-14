@@ -58,10 +58,10 @@
       ]
     },
     {
-      "id": "Haixing",
+      "id": "HaiXing",
       "name": "海星",
       "keys": [
-        "Haixing"
+        "HaiXing"
       ],
       "scripts": [
         {
@@ -71,7 +71,7 @@
       ],
       "settings": [
         {
-          "id": "Haixing",
+          "id": "HaiXing",
           "name": "账号token",
           "val": "",
           "type": "text",
