@@ -29,7 +29,7 @@ hostname = www.feihevip.com
 
 
 const $ = new Env("星妈优选");
-const ckName = "MomsChoice_data";
+const ckName = "xmyx_data";
 
 //-------------------- 一般不动变量区域 -------------------------------------
 $.appid = "wx4205ec55b793245e";
@@ -49,7 +49,7 @@ $.notifyList = [];
 $.notifyMsg = [];
 
 //---------------------- 自定义变量区域 -----------------------------------
-const appid = 'xmyx'
+const appid = 'MomsChoice'
 const appKey = 'TwUQ01lKS1Km5zlV2f7amsZc5EQYkTbv'
 const taskList = [
   { taskName: "浏览粮油专场10秒", taskType: "XXGG", time: 11 },
