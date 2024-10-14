@@ -49,7 +49,7 @@ $.notifyList = [];
 $.notifyMsg = [];
 
 //---------------------- 自定义变量区域 -----------------------------------
-const appid = 'MomsChoice'
+const appid = 'xmyx'
 const appKey = 'TwUQ01lKS1Km5zlV2f7amsZc5EQYkTbv'
 const taskList = [
   { taskName: "浏览粮油专场10秒", taskType: "XXGG", time: 11 },
