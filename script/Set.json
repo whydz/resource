@@ -15,11 +15,11 @@
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png"
       ],
       "keys": [
-        "AppleID_data"
+        "iios_data"
       ],
       "settings": [
         {
-          "id": "AppleID_data",
+          "id": "iios_data",
           "name": "账号信息",
           "val": null,
           "type": "textarea",
