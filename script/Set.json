@@ -66,7 +66,7 @@
       "scripts": [
         {
           "name": "海星-手动执行",
-          "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiXing/HaiXing.js"
+          "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Haixing.js"
         }
       ],
       "settings": [
@@ -80,7 +80,7 @@
       ],
       "author": "whydz",
       "repo": "",
-      "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiXing/HaiXing.js",
+      "script": "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Haixing.js",
       "icons": [
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Haixing.png",
         "https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Haixing.png"
