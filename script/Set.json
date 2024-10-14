@@ -19,7 +19,7 @@
       ],
       "settings": [
         {
-          "id": "iios_data",
+          "id": "AppleID",
           "name": "账号信息",
           "val": null,
           "type": "textarea",
