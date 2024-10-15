@@ -4,7 +4,7 @@ new Env('iios');
 @Date: 2024-09-17 20:00
 
 @Description:
-iios: 完成每日签到、观看教程任务。
+iios: 每日签到、观看教程
 
 环境变量说明:
   变量名: iios_data
