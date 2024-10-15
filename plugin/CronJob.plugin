@@ -160,7 +160,7 @@ cron {arg67} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/S
 # 大潮
 cron {arg69} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/DaChao/DaChao.js, timeout=1200, enable= {arg70}, tag=大潮, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Dachao.png
 # iios
-cron {arg71} script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/iios.js, timeout=1200, enable= {arg72}, tag=iios, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png
+cron {arg71} script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/iios.js, timeout=1200, enable= {arg72}, tag=iios, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/iios.png
 # 中国电信
 cron {arg73} script-path=https://github.com/ChinaTelecomOperators/ChinaTelecom/releases/download/Prerelease-Alpha/Tele_Cellular_Auto.js, timeout=1200, enable= {arg74}, tag=中国电信, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/ChinaTelecom.png
 # 网上国网
