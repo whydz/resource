@@ -1,7 +1,6 @@
 {"name":"whydz", "description":"自用图标", "icons":[
 {"name":"AlibabaCloud","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AlibabaCloud.png"},
 {"name":"Amap","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Amap.png"},
-{"name":"AppleID","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png"},
 {"name":"B612","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/B612.png"},
 {"name":"BaiduNetdisk","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/BaiduNetdisk.png"},
 {"name":"BaiduWenku","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/BaiduWenku.png"},
@@ -54,6 +53,7 @@
 {"name":"Yongpai","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Yongpai.png"},
 {"name":"ZEEKR","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/ZEEKR.png"},
 {"name":"Zhihu","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Zhihu.png"},
+{"name":"iios","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/iios.png"},
 {"name":"Apple","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/other/Apple.png"},
 {"name":"ChatGPT","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/other/ChatGPT.png"},
 {"name":"Final","url":"https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/other/Final.png"}, 
