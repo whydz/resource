@@ -1,48 +1,47 @@
-#!name = 羊毛Cookie/Token
-#!desc = 🐈定时任务
+#!name = 捕获Cookie
+#!desc = 大吉大利
 #!openUrl = 
 #!author = whydz
-#!tag = 获取凭证
-#!system = iOS
+#!tag = 脚本
+#!system =
 #!system_version = 
 #!loon_version = 3.2.3(753)
 #!homepage = https://github.com/whydz/resource
 #!icon = https://raw.githubusercontent.com/cuteys/ProxyResource/main/icon/cuteys_small.png
-#!date = 2024-10-15 00:42:28
-// 自用脚本
+#!date = 2024-10-15 10:50:28
 
 [Argument]
-arg1 = switch,true,tag=途虎养车
-arg2 = switch,true,tag=飞凡汽车
-arg3 = switch,true,tag=上汽大众
-arg4 = switch,true,tag=东风日产
-arg5 = switch,true,tag=吉利汽车
-arg6 = switch,true,tag=奇瑞汽车
-arg7 = switch,true,tag=极氪
-arg8 = switch,true,tag=万达商业
-arg9 = switch,true,tag=龙湖天街
-arg10 = switch,true,tag=高德地图
-arg11 = switch,true,tag=城市通
-arg12 = switch,true,tag=华住会
-arg13 = switch,true,tag=联想
-arg14 = switch,true,tag=阿里云
-arg15 = switch,true,tag=星妈优选
-arg16 = switch,true,tag=达美乐
-arg17 = switch,true,tag=日清食品
-arg18 = switch,true,tag=海天
-arg19 = switch,true,tag=蒙牛
-arg20 = switch,true,tag=伊利
-arg21 = switch,true,tag=伊利国庆
-arg22 = switch,true,tag=蜜雪冰城
-arg23 = switch,true,tag=奈雪的茶
-arg24 = switch,true,tag=奶茶
-arg25 = switch,true,tag=奶茶
-arg26 = switch,true,tag=习酒
-arg27 = switch,true,tag=毛铺草本荟
-arg28 = switch,true,tag=建行生活
-arg29 = switch,true,tag=小餐霸王餐
-arg30 = switch,true,tag=杰士邦
-arg31 = switch,true,tag=泡泡玛特
+arg1 = switch,false,true,tag=途虎养车
+arg2 = switch,false,true,tag=飞凡汽车
+arg3 = switch,false,true,tag=上汽大众
+arg4 = switch,false,true,tag=东风日产
+arg5 = switch,false,true,tag=吉利汽车
+arg6 = switch,false,true,tag=奇瑞汽车
+arg7 = switch,false,true,tag=极氪
+arg8 = switch,false,true,tag=万达商业
+arg9 = switch,false,true,tag=龙湖天街
+arg10 = switch,false,true,tag=高德地图
+arg11 = switch,false,true,tag=城市通
+arg12 = switch,false,true,tag=华住会
+arg13 = switch,false,true,tag=联想
+arg14 = switch,false,true,tag=阿里云
+arg15 = switch,false,true,tag=星妈优选
+arg16 = switch,false,true,tag=达美乐
+arg17 = switch,false,true,tag=日清食品
+arg18 = switch,false,true,tag=海天
+arg19 = switch,false,true,tag=蒙牛
+arg20 = switch,false,true,tag=伊利
+arg21 = switch,false,true,tag=伊利国庆
+arg22 = switch,false,true,tag=蜜雪冰城
+arg23 = switch,false,true,tag=奈雪的茶
+arg24 = switch,false,true,tag=奶茶
+arg25 = switch,false,true,tag=奶茶
+arg26 = switch,false,true,tag=习酒
+arg27 = switch,false,true,tag=毛铺草本荟
+arg28 = switch,false,true,tag=建行生活
+arg29 = switch,false,true,tag=小餐霸王餐
+arg30 = switch,false,true,tag=杰士邦
+arg31 = switch,false,true,tag=泡泡玛特
 
 [Script]
 #途虎养车
