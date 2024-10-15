@@ -66,7 +66,7 @@ http-request ^https?:\/\/gw2c\-hw\-open\.longfor\.com\/lmarketing\-task\-api\-mv
 #高德地图
 http-response ^https:\/\/m5(-zb)?\.amap\.com\/ws\/yuece\/(act|openapi)\/(activity\/current\/)?query script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=1200, enabled={arg10}, tag=高德地图, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Amap.png
 #城市通
-http-response ^https:\/\/wxxcx\.17u\.cn\/subwayapi\/user\/detail script-path=https://gist.githubusercontent.com/Sliverkiss/74ce859af0cd8a602b00bf5efdfddb53/raw/cst.js, requires-body=true, timeout=1200, enabled={arg11}, tag=城市通, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/CityPASS.png
+http-response ^https:\/\/wxxcx\.17u\.cn\/subwayapi\/user\/detail script-path=https://gist.githubusercontent.com/Sliverkiss/74ce859af0cd8a602b00bf5efdfddb53/raw/cst.js, requires-body=true, timeout=1200, enabled={arg11}, tag=城市通, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/CityPass.png
 #华住会
 http-request ^https?:\/\/hweb-personalcenter\.huazhu\.com\/login\/autoLogin$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, timeout=1200, enabled={arg12}, tag=华住会, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/HZH.png
 #联想
@@ -92,9 +92,9 @@ http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=ht
 #奈雪的茶
 http-request ^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, requires-body=true, timeout=1200, enabled={arg23}, tag=奈雪的茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Naixue.png
 #奶茶
-http-response ^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=1200, enabled={arg24}, tag=奶茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Bubbletea.png
+http-response ^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=1200, enabled={arg24}, tag=奶茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/BubbleTea.png
 #奶茶
-http-request ^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=1200, enabled={arg25}, tag=奶茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Bubbletea.png
+http-request ^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=1200, enabled={arg25}, tag=奶茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/BubbleTea.png
 #习酒
 http-response ^https:\/\/xcx\.exijiu\.com\/anti-channeling\/public\/index.php\/api\/v2\/Member\/getJifenShopMemberInfo script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/XiJiu/XiJiu.js, requires-body=true, timeout=1200, enabled={arg26}, tag=习酒, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Xijiu.png
 #毛铺草本荟
