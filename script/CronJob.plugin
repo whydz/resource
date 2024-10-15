@@ -1,15 +1,14 @@
 #!name = 定时任务
-#!desc = 🐈自用的定时任务
+#!desc = 大吉大利
 #!openUrl = 
-#!author = cuteys[https://github.com/cuteys]
-#!tag = 定时任务
-#!system = iOS, iPadOS
+#!author = whydz
+#!tag = 脚本
+#!system = 
 #!system_version = 
 #!loon_version = 3.2.3(753)
-#!homepage = https://github.com/cuteys/ProxyResource
+#!homepage = https://github.com/whydz/resource
 #!icon = https://raw.githubusercontent.com/cuteys/ProxyResource/main/icon/cuteys_small.png
 #!date = 2024-09-20 00:42:35
-// 本插件中的所有脚本均为个人收集整合，非本人制作。引用脚本的版权归原作者所有，若有任何版权问题或侵权行为，请联系我进行处理。感谢各位原作者的贡献与分享！
 
 [Argument]
 arg1 = input,"0 0 12 * * ?",tag=哔哩哔哩每日任务时间
