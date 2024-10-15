@@ -12,81 +12,81 @@
 
 [Argument]
 arg2 = switch,false,true,tag=途虎养车
-arg1 = input,"10 20 * * *",tag=定时
+arg1 = input,"10 20 * * *",tag=cron
 arg4 = switch,false,true,tag=飞凡汽车
-arg3 = input,"11 20 * * *",tag=定时
+arg3 = input,"11 20 * * *",tag=cron
 arg6 = switch,false,true,tag=上汽大众
-arg5 = input,"12 20 * * *",tag=定时
+arg5 = input,"12 20 * * *",tag=cron
 arg8 = switch,false,true,tag=东风日产
-arg7 = input,"13 20 * * *",tag=定时
+arg7 = input,"13 20 * * *",tag=cron
 arg10 = switch,false,true,tag=吉利汽车
-arg9 = input,"14 20 * * *",tag=定时
+arg9 = input,"14 20 * * *",tag=cron
 arg12 = switch,false,true,tag=奇瑞汽车
-arg11 = input,"15 20 * * *",tag=定时
+arg11 = input,"15 20 * * *",tag=cron
 arg14 = switch,false,true,tag=极氪
-arg13 = input,"16 20 * * *",tag=定时
+arg13 = input,"16 20 * * *",tag=cron
 arg16 = switch,false,true,tag=福田e家
-arg15 = input,"17 20 * * *",tag=定时
+arg15 = input,"17 20 * * *",tag=cron
 arg18 = switch,false,true,tag=万达商业
-arg17 = input,"18 20 * * *",tag=定时
+arg17 = input,"18 20 * * *",tag=cron
 arg20 = switch,false,true,tag=龙湖天街
-arg19 = input,"19 20 * * *",tag=定时
+arg19 = input,"19 20 * * *",tag=cron
 arg22 = switch,false,true,tag=高德地图
-arg21 = input,"20 20 * * *",tag=定时
+arg21 = input,"20 20 * * *",tag=cron
 arg24 = switch,false,true,tag=高德地图抢卷
-arg23 = input,"21 20 * * *",tag=定时
+arg23 = input,"21 20 * * *",tag=cron
 arg26 = switch,false,true,tag=城市通
-arg25 = input,"22 20 * * *",tag=定时
+arg25 = input,"22 20 * * *",tag=cron
 arg28 = switch,false,true,tag=华住会
-arg27 = input,"23 20 * * *",tag=定时
+arg27 = input,"23 20 * * *",tag=cron
 arg30 = switch,false,true,tag=联想
-arg29 = input,"24 20 * * *",tag=定时
+arg29 = input,"24 20 * * *",tag=cron
 arg32 = switch,false,true,tag=阿里云
-arg31 = input,"0 8,13 * * *",tag=定时
+arg31 = input,"0 8,13 * * *",tag=cron
 arg34 = switch,false,true,tag=星妈优选
-arg33 = input,"25 20 * * *",tag=定时
+arg33 = input,"25 20 * * *",tag=cron
 arg36 = switch,false,true,tag=达美乐
-arg35 = input,"26 20 * * *",tag=定时
+arg35 = input,"26 20 * * *",tag=cron
 arg38 = switch,false,true,tag=日清食品
-arg37 = input,"27 20 * * *",tag=定时
+arg37 = input,"27 20 * * *",tag=cron
 arg40 = switch,false,true,tag=海天
-arg39 = input,"28 20 * * *",tag=定时
+arg39 = input,"28 20 * * *",tag=cron
 arg42 = switch,false,true,tag=蒙牛
-arg41 = input,"29 20 * * *",tag=定时
+arg41 = input,"29 20 * * *",tag=cron
 arg44 = switch,false,true,tag=伊利
-arg43 = input,"30 20 * * *",tag=定时
+arg43 = input,"30 20 * * *",tag=cron
 arg46 = switch,false,true,tag=伊利国庆
-arg45 = input,"31 20 * * *",tag=定时
+arg45 = input,"31 20 * * *",tag=cron
 arg48 = switch,false,true,tag=蜜雪冰城
-arg47 = input,"32 20 * * *",tag=定时
+arg47 = input,"32 20 * * *",tag=cron
 arg50 = switch,false,true,tag=奈雪的茶
-arg49 = input,"33 20 * * *",tag=定时
+arg49 = input,"33 20 * * *",tag=cron
 arg52 = switch,false,true,tag=奶茶
-arg51 = input,"34 20 * * *",tag=定时
+arg51 = input,"34 20 * * *",tag=cron
 arg54 = switch,false,true,tag=习酒
-arg53 = input,"35 20 * * *",tag=定时
+arg53 = input,"35 20 * * *",tag=cron
 arg56 = switch,false,true,tag=毛铺草本荟
-arg55 = input,"36 20 * * *",tag=定时
+arg55 = input,"36 20 * * *",tag=cron
 arg58 = switch,false,true,tag=建行生活
-arg57 = input,"37 20 * * *",tag=定时
+arg57 = input,"37 20 * * *",tag=cron
 arg60 = switch,false,true,tag=小蚕霸王餐
-arg59 = input,"38 20 * * *",tag=定时
+arg59 = input,"38 20 * * *",tag=cron
 arg62 = switch,false,true,tag=杰士邦
-arg61 = input,"39 20 * * *",tag=定时
+arg61 = input,"39 20 * * *",tag=cron
 arg64 = switch,false,true,tag=泡泡玛特
-arg63 = input,"40 20 * * *",tag=定时
+arg63 = input,"40 20 * * *",tag=cron
 arg66 = switch,false,true,tag=甬派
-arg65 = input,"41 20 * * *",tag=定时
+arg65 = input,"41 20 * * *",tag=cron
 arg68 = switch,false,true,tag=望潮
-arg67 = input,"42 20 * * *",tag=定时
+arg67 = input,"42 20 * * *",tag=cron
 arg70 = switch,false,true,tag=大潮
-arg69 = input,"43 20 * * *",tag=定时
+arg69 = input,"43 20 * * *",tag=cron
 arg72 = switch,false,true,tag=iios
-arg71 = input,"44 20 * * *",tag=定时
+arg71 = input,"44 20 * * *",tag=cron
 arg74 = switch,false,true,tag=中国电信
-arg73 = input,"45 20 * * *",tag=定时
+arg73 = input,"45 20 * * *",tag=cron
 arg76 = switch,false,true,tag=网上国网
-arg75 = input,"46 20 * * *",tag=定时
+arg75 = input,"46 20 * * *",tag=cron
 
 [Script]
 # 途虎养车
