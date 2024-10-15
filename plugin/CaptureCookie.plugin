@@ -1,0 +1,111 @@
+#!name = 捕获Cookie
+#!desc = 大吉大利
+#!openUrl = 
+#!author = whydz
+#!tag = 脚本
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.3(753)
+#!homepage = https://github.com/whydz/resource
+#!icon = https://raw.githubusercontent.com/cuteys/ProxyResource/main/icon/cuteys_small.png
+#!date = 2024-10-15 10:50:28
+
+[Argument]
+arg1 = switch,false,true,tag=途虎养车
+arg2 = switch,false,true,tag=飞凡汽车
+arg3 = switch,false,true,tag=上汽大众
+arg4 = switch,false,true,tag=东风日产
+arg5 = switch,false,true,tag=吉利汽车
+arg6 = switch,false,true,tag=奇瑞汽车
+arg7 = switch,false,true,tag=极氪
+arg8 = switch,false,true,tag=万达商业
+arg9 = switch,false,true,tag=龙湖天街
+arg10 = switch,false,true,tag=高德地图
+arg11 = switch,false,true,tag=城市通
+arg12 = switch,false,true,tag=华住会
+arg13 = switch,false,true,tag=联想
+arg14 = switch,false,true,tag=阿里云
+arg15 = switch,false,true,tag=星妈优选
+arg16 = switch,false,true,tag=达美乐
+arg17 = switch,false,true,tag=日清食品
+arg18 = switch,false,true,tag=海天
+arg19 = switch,false,true,tag=蒙牛
+arg20 = switch,false,true,tag=伊利
+arg21 = switch,false,true,tag=伊利国庆
+arg22 = switch,false,true,tag=蜜雪冰城
+arg23 = switch,false,true,tag=奈雪的茶
+arg24 = switch,false,true,tag=奶茶
+arg25 = switch,false,true,tag=奶茶
+arg26 = switch,false,true,tag=习酒
+arg27 = switch,false,true,tag=毛铺草本荟
+arg28 = switch,false,true,tag=建行生活
+arg29 = switch,false,true,tag=小餐霸王餐
+arg30 = switch,false,true,tag=杰士邦
+arg31 = switch,false,true,tag=泡泡玛特
+
+[Script]
+# 途虎养车
+http-request ^https://api.tuhu.cn/User/GetInternalCenterInfo script-path=https://raw.githubusercontent.com/Crazy-Z7/Task/main/Tuhyche.js, timeout=1200, enabled={arg1}, tag=途虎养车, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/TUHU.png
+# 飞凡汽车
+http-request ^https:\/\/(apps|capi)\.risingauto\.com\/api\/energy\/task\/r\/mini\/signInState\?brandCode=\d$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ffqc.js, timeout=1200, enabled={arg2}, tag=飞凡汽车, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/RISINGAUTO.png
+# 上汽大众
+http-request ^https?:\/\/api\.mos\.csvw\.com\/mos\/security\/api\/v1\/app\/at\/actions\/refresh$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/csvw.js, timeout=1200, enabled={arg3}, tag=上汽大众, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/SAICVOLKSWAGEN.png
+# 东风日产
+http-response ^https?:\/\/oneapph5\.dongfeng-nissan\.com\.cn\/mb-gw\/dndc-gateway\/community\/api\/v2\/user$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/nissan.js, requires-body=true, timeout=1200, enabled={arg4}, tag=东风日产, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/DongfengNissan.png
+# 吉利汽车
+http-request ^https?:\/\/app\.geely\.com\/my\/getMyCenterCounts$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, timeout=1200, enabled={arg5}, tag=吉利汽车, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Geely.png
+# 奇瑞汽车
+http-request ^https:\/\/channel\.cheryfs\.cn\/archer\/activity-api\/common\/accountPointLeft script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.js, requires-body=true, timeout=1200, enabled={arg6}, tag=奇瑞汽车, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Chery.png
+# 极氪
+http-request ^https:\/\/api-gw-toc\.zeekrlife\.com\/zeekrlife-app-user\/v\d\/user\/info\/query$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/zeekr.js, timeout=1200, enabled={arg7}, tag=极氪, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/ZEEKR.png
+# 万达商业
+http-response ^https?:\/\/www\.wandawic\.com\/api\/foreground\/loginregister\/queryUser script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/wdzhsy/wdzhsy.js, requires-body=true, timeout=1200, enabled={arg8}, tag=万达商业, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Wanda.png
+# 龙湖天街
+http-request ^https?:\/\/gw2c\-hw\-open\.longfor\.com\/lmarketing\-task\-api\-mvc\-prod\/openapi\/task\/v1\/signature\/clock script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js, timeout=1200, enabled={arg9}, tag=龙湖天街, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Longfor.png
+# 高德地图
+http-response ^https:\/\/m5(-zb)?\.amap\.com\/ws\/yuece\/(act|openapi)\/(activity\/current\/)?query script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=1200, enabled={arg10}, tag=高德地图, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Amap.png
+# 城市通
+http-response ^https:\/\/wxxcx\.17u\.cn\/subwayapi\/user\/detail script-path=https://gist.githubusercontent.com/Sliverkiss/74ce859af0cd8a602b00bf5efdfddb53/raw/cst.js, requires-body=true, timeout=1200, enabled={arg11}, tag=城市通, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/CityPass.png
+# 华住会
+http-request ^https?:\/\/hweb-personalcenter\.huazhu\.com\/login\/autoLogin$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, timeout=1200, enabled={arg12}, tag=华住会, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/HZH.png
+# 联想
+http-response ^https:\/\/mmembership\.lenovo\.com\.cn\/member-hp-webapi\/v1\/user\/getUserProfileInformation script-path=https://gist.githubusercontent.com/Sliverkiss/b9eaf7c8d98df06087851c3e1d5040cf/raw/lenovo.js, requires-body=true, timeout=1200, enabled={arg13}, tag=联想, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Lenovo.png
+# 阿里云
+http-response ^https?:\/\/developer\.aliyun\.com\/developer\/api\/my\/user\/getUser script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/aliyun_web/aliyun_web.js, requires-body=true, timeout=1200, enabled={arg14}, tag=阿里云, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AlibabaCloud.png
+# 星妈优选
+http-response ^https?:\/\/www\.feihevip\.com\/api\/starMember\/getMemberInfo script-path=https://raw.githubusercontent.com/leiyiyan/resource/refs/heads/main/script/xmyx/xmyx.js, requires-body=true, timeout=1200, enabled={arg15}, tag=星妈优选, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/MomsChoice.png
+# 达美乐
+http-request ^https:\/\/game\.dominos\.com\.cn\/.+\/game\/gameDone script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, requires-body=true, timeout=1200, enabled={arg16}, tag=达美乐, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/DominosPizza.png
+# 日清食品
+http-response ^https:\/\/prod-api\.nissinfoodium\.com\.cn\/gw-shop\/app\/v1\/user\/detail script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RQSP/RQSP.js, requires-body=true, timeout=1200, enabled={arg17}, tag=日清食品, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Nissin.png
+# 海天
+http-response ^https:\/\/cmallapi\.haday\.cn\/buyer-api\/wechat\/mini\/phoneNew\/login script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/HADAY.js, requires-body=true, timeout=1200, enabled={arg18}, tag=海天, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/HADAY.png
+# 蒙牛
+http-request ^https:\/\/xapi\.weimob\.com\/api3(?:\/.*)?$ script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/mnmy.js, timeout=1200, enabled={arg19}, tag=蒙牛, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Mengniu.png
+# 伊利
+http-request ^https:\/\/msmarket\.msx\.digitalyili\.com\/gateway\/api\/auth\/account\/user\/info script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/task/hlyl.js, timeout=1200, enabled={arg20}, tag=伊利, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Yili.png
+# 伊利国庆
+http-response ^https:\/\/msmarket\.msx\.digitalyili\.com\/gateway\/api\/auth\/account\/user\/info script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Yili.js, requires-body=true, timeout=1200, enabled={arg21}, tag=伊利国庆, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Yili.png
+# 蜜雪冰城
+http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=1200, enabled={arg22}, tag=蜜雪冰城, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/MXBC.png
+# 奈雪的茶
+http-request ^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, requires-body=true, timeout=1200, enabled={arg23}, tag=奈雪的茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Naixue.png
+# 奶茶
+http-response ^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=1200, enabled={arg24}, tag=奶茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/BubbleTea.png
+# 奶茶
+http-request ^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=1200, enabled={arg25}, tag=奶茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/BubbleTea.png
+# 习酒
+http-response ^https:\/\/xcx\.exijiu\.com\/anti-channeling\/public\/index.php\/api\/v2\/Member\/getJifenShopMemberInfo script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/XiJiu/XiJiu.js, requires-body=true, timeout=1200, enabled={arg26}, tag=习酒, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Xijiu.png
+# 毛铺草本荟
+http-response ^https:\/\/mpb\.jingjiu\.com\/proxy-he\/api\/user script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/MPCBH/MPCBH.js, requires-body=true, timeout=1200, enabled={arg27}, tag=毛铺草本荟, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Maopu.png
+# 建行生活
+http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, requires-body=true, timeout=1200, enabled={arg28}, tag=建行生活, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/CCBLife.png
+# 小餐霸王餐
+http-response ^https:\/\/gw\.xiaocantech\.com\/rpc script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw, requires-body=true, timeout=1200, enabled={arg29}, tag=小蚕霸王餐, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Xiaocan.png
+# 杰士邦
+http-response ^https:\/\/xh-vip-api\.a-touchin\.com\/mp\/user\/info script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, requires-body=true, timeout=1200, enabled={arg30}, tag=杰士邦, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Jissbon.png
+# 泡泡玛特
+http-response ^https:\/\/popvip\.paquapp\.com\/miniapp\/v2\/wechat\/getUserInfo script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js, requires-body=true, timeout=1200, enabled={arg31}, tag=泡泡玛特, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/POPMART.png
+
+[MITM]
+hostname = api.tuhu.cn,*.risingauto.com,api.mos.csvw.com,oneapph5.dongfeng-nissan.com.cn,app.geely.com,channel.cheryfs.cn,api-gw-toc.zeekrlife.com,www.wandawic.com,gw2c-hw-open.longfor.com,*.amap.com,wxxcx.17u.cn,hweb-personalcenter.huazhu.com,mmembership.lenovo.com.cn,developer.aliyun.com,www.feihevip.com,game.dominos.com.cn,prod-api.nissinfoodium.com.cn,cmallapi.haday.cn,xapi.weimob.com,msmarket.msx.digitalyili.com,mxsa.mxbc.net,tm-web.pin-dao.cn,webapi.qmai.cn,webapi2.qmai.cn,qmwebapi.qmai.cn,xcx.exijiu.com,mpb.jingjiu.com,yunbusiness.ccb.com,gw.xiaocantech.com,xh-vip-api.a-touchin.com,popvip.paquapp.com
