@@ -152,7 +152,7 @@ cron {arg59} script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315
 # 杰士邦
 cron {arg61} script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, timeout=1200, enable= {arg62}, tag=杰士邦, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Jissbon.png
 # 泡泡玛特
-cron {arg63} script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js, timeout=1200, enable= {arg64}, tag=泡泡玛特, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/POPMART‌.png
+cron {arg63} script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js, timeout=1200, enable= {arg64}, tag=泡泡玛特, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/POPMART.png
 # 甬派
 cron {arg65} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongPai/YongPai.js, timeout=1200, enable= {arg66}, tag=甬派, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Yongpai.png
 # 望潮
