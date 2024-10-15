@@ -128,9 +128,9 @@ cron {arg35} script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d36
 # 日清食品
 cron {arg37} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RQSP/RQSP.js, timeout=1200, enable= {arg38}, tag=日清食品, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Nissin.png
 # 海天
-cron {arg39} script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/HADAY.js, timeout=1200, enable= {arg40}, tag=海天, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/ZEEKR.png
+cron {arg39} script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/HADAY.js, timeout=1200, enable= {arg40}, tag=海天, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/HADAY.png
 # 蒙牛
-cron {arg41} script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/mnmy.js, timeout=1200, enable= {arg42}, tag=蒙牛, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/HADAY.png
+cron {arg41} script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/mnmy.js, timeout=1200, enable= {arg42}, tag=蒙牛, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Mengniu.png
 # 伊利
 cron {arg43} script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/task/hlyl.js, timeout=1200, enable= {arg44}, tag=伊利, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Yili.png
 # 伊利国庆
