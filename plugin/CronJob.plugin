@@ -1,0 +1,169 @@
+#!name = 定时任务
+#!desc = 大吉大利
+#!openUrl = 
+#!author = whydz
+#!tag = 脚本
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.3(753)
+#!homepage = https://github.com/whydz/resource
+#!icon = https://raw.githubusercontent.com/cuteys/ProxyResource/main/icon/cuteys_small.png
+#!date = 2024-09-20 00:42:35
+
+[Argument]
+arg1 = input,"0 0 12 * * ?",tag=途虎养车
+arg2 = switch,false,true,tag=途虎养车
+arg3 = input,"0 0 12 * * ?",tag=飞凡汽车
+arg4 = switch,false,true,tag=飞凡汽车
+arg5 = input,"0 0 11 * * ?",tag=上汽大众
+arg6 = switch,false,true,tag=上汽大众
+arg7 = input,"0 0 13 * * ?",tag=东风日产
+arg8 = switch,false,true,tag=东风日产
+arg9 = input,"0 0 12 * * ?",tag=吉利汽车
+arg10 = switch,false,true,tag=吉利汽车
+arg11 = input,"0 0 12 * * ?",tag=奇瑞汽车
+arg12 = switch,false,true,tag=奇瑞汽车
+arg13 = input,"0 0 12 * * ?",tag=极氪
+arg14 = switch,false,true,tag=极氪
+arg15 = input,"0 0 12 * * ?",tag=福田e家
+arg16 = switch,false,true,tag=福田e家
+arg17 = input,"0 0 12 * * ?",tag=万达商业
+arg18 = switch,false,true,tag=万达商业
+arg19 = input,"0 0 12 * * ?",tag=龙湖天街
+arg20 = switch,false,true,tag=龙湖天街
+arg21 = input,"0 0 12 * * ?",tag=高德地图
+arg22 = switch,false,true,tag=高德地图
+arg23 = input,"0 0 12 * * ?",tag=高德地图
+arg24 = switch,false,true,tag=高德地图
+arg25 = input,"0 0 12 * * ?",tag=城市通
+arg26 = switch,false,true,tag=城市通
+arg27 = input,"0 0 12 * * ?",tag=华住会
+arg28 = switch,false,true,tag=华住会
+arg29 = input,"0 0 12 * * ?",tag=联想
+arg30 = switch,false,true,tag=联想
+arg31 = input,"0 0 12 * * ?",tag=阿里云
+arg32 = switch,false,true,tag=阿里云
+arg33 = input,"0 0 12 * * ?",tag=星妈优选
+arg34 = switch,false,true,tag=星妈优选
+arg35 = input,"0 0 12 * * ?",tag=达美乐
+arg36 = switch,false,true,tag=达美乐
+arg37 = input,"0 0 12 * * ?",tag=日清食品
+arg38 = switch,false,true,tag=日清食品
+arg39 = input,"0 0 12 * * ?",tag=海天
+arg40 = switch,false,true,tag=海天
+arg41 = input,"0 0 12 * * ?",tag=蒙牛
+arg42 = switch,false,true,tag=蒙牛
+arg43 = input,"0 0 12 * * ?",tag=伊利
+arg44 = switch,false,true,tag=伊利
+arg45 = input,"0 0 12 * * ?",tag=伊利国庆
+arg46 = switch,false,true,tag=伊利国庆
+arg47 = input,"0 0 12 * * ?",tag=蜜雪冰城
+arg48 = switch,false,true,tag=蜜雪冰城
+arg49 = input,"0 0 12 * * ?",tag=奈雪的茶
+arg50 = switch,false,true,tag=奈雪的茶
+arg51 = input,"0 0 12 * * ?",tag=奶茶
+arg52 = switch,false,true,tag=奶茶
+arg53 = input,"0 0 12 * * ?",tag=习酒
+arg54 = switch,false,true,tag=习酒
+arg55 = input,"0 0 12 * * ?",tag=毛铺草本荟
+arg56 = switch,false,true,tag=毛铺草本荟
+arg57 = input,"0 0 12 * * ?",tag=建行生活
+arg58 = switch,false,true,tag=建行生活
+arg59 = input,"0 0 12 * * ?",tag=小蚕霸王餐
+arg60 = switch,false,true,tag=小蚕霸王餐
+arg61 = input,"0 0 12 * * ?",tag=杰士邦
+arg62 = switch,false,true,tag=杰士邦
+arg63 = input,"0 0 12 * * ?",tag=泡泡玛特
+arg64 = switch,false,true,tag=泡泡玛特
+arg65 = input,"0 0 12 * * ?",tag=甬派
+arg66 = switch,false,true,tag=甬派
+arg67 = input,"0 0 12 * * ?",tag=望潮
+arg68 = switch,false,true,tag=望潮
+arg69 = input,"0 0 12 * * ?",tag=大潮
+arg70 = switch,false,true,tag=大潮
+arg71 = input,"0 0 12 * * ?",tag=iios
+arg72 = switch,false,true,tag=iios
+arg73 = input,"0 0 12 * * ?",tag=中国电信
+arg74 = switch,false,true,tag=中国电信
+arg75 = input,"0 0 12 * * ?",tag=网上国网
+arg76 = switch,false,true,tag=网上国网
+
+[Script]
+# 途虎养车
+cron {arg1} script-path=https://raw.githubusercontent.com/Crazy-Z7/Task/main/Tuhyche.js, timeout=1200, enable= {arg2}, tag=途虎养车, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/TUHU.png
+# 飞凡汽车
+cron {arg3} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ffqc.js, timeout=1200, enable= {arg4}, tag=飞凡汽车, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/RISINGAUTO.png
+# 上汽大众
+cron {arg5} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/csvw.js, timeout=1200, enable= {arg6}, tag=上汽大众, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/SAICVOLKSWAGEN.png
+# 东风日产
+cron {arg7} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/nissan.js, timeout=1200, enable= {arg8}, tag=东风日产, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/DongfengNissan.png
+# 吉利汽车
+cron {arg9} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, timeout=1200, enable= {arg10}, tag=吉利汽车, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Geely.png
+# 奇瑞汽车
+cron {arg11} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.js, timeout=1200, enable= {arg12}, tag=奇瑞汽车, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Chery.png
+# 极氪
+cron {arg13} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/zeekr.js, timeout=1200, enable= {arg14}, tag=极氪, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/ZEEKR.png
+# 福田e家
+cron {arg15} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/FTEJ/FTEJ.js, timeout=1200, enable= {arg16}, tag=福田e家, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Foton.png
+# 万达商业
+cron {arg17} script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/wdzhsy/wdzhsy.js, timeout=1200, enable= {arg18}, tag=万达商业, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Wanda.png
+# 龙湖天街
+cron {arg19} script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js, timeout=1200, enable= {arg20}, tag=龙湖天街, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Longfor.png
+# 高德地图
+cron {arg21} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=1200, enable= {arg22}, tag=高德地图, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Amap.png
+# 高德地图抢卷
+cron {arg23} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDacheCoupon.js, timeout=1200, enable= {arg24}, tag=高德地图抢卷, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Amap.png
+# 城市通
+cron {arg25} script-path=https://gist.githubusercontent.com/Sliverkiss/74ce859af0cd8a602b00bf5efdfddb53/raw/cst.js, timeout=1200, enable= {arg26}, tag=城市通, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/CityPass.png
+# 华住会
+cron {arg27} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, timeout=1200, enable= {arg28}, tag=华住会, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/HZH.png
+# 联想
+cron {arg29} script-path=https://gist.githubusercontent.com/Sliverkiss/b9eaf7c8d98df06087851c3e1d5040cf/raw/lenovo.js, timeout=1200, enable= {arg30}, tag=联想, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Lenovo.png
+# 阿里云
+cron {arg31} script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/aliyun_web/aliyun_web.js, timeout=1200, enable= {arg32}, tag=阿里云, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AlibabaCloud.png
+# 星妈优选
+cron {arg33} script-path=https://raw.githubusercontent.com/leiyiyan/resource/refs/heads/main/script/xmyx/xmyx.js, timeout=1200, enable= {arg34}, tag=星妈优选, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/MomsChoice.png
+# 达美乐
+cron {arg35} script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, timeout=1200, enable= {arg36}, tag=达美乐, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/DominosPizza.png
+# 日清食品
+cron {arg37} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RQSP/RQSP.js, timeout=1200, enable= {arg38}, tag=日清食品, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Nissin.png
+# 海天
+cron {arg39} script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/HADAY.js, timeout=1200, enable= {arg40}, tag=海天, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/ZEEKR.png
+# 蒙牛
+cron {arg41} script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/mnmy.js, timeout=1200, enable= {arg42}, tag=蒙牛, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/HADAY.png
+# 伊利
+cron {arg43} script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/task/hlyl.js, timeout=1200, enable= {arg44}, tag=伊利, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Yili.png
+# 伊利国庆
+cron {arg45} script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Yili.js, timeout=1200, enable= {arg46}, tag=伊利国庆, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Yili.png
+# 蜜雪冰城
+cron {arg47} script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, timeout=1200, enable= {arg48}, tag=蜜雪冰城, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/MXBC.png
+# 奈雪的茶
+cron {arg49} script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, timeout=1200, enable= {arg50}, tag=奈雪的茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Naixue.png
+# 奶茶
+cron {arg51} script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, timeout=1200, enable= {arg52}, tag=奶茶, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/BubbleTea.png
+# 习酒
+cron {arg53} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/XiJiu/XiJiu.js, timeout=1200, enable= {arg54}, tag=习酒, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Xijiu.png
+# 毛铺草本荟
+cron {arg55} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/MPCBH/MPCBH.js, timeout=1200, enable= {arg56}, tag=毛铺草本荟, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Maopu.png
+# 建行生活
+cron {arg57} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, timeout=1200, enable= {arg58}, tag=建行生活, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/CCBLife.png
+# 小餐霸王餐
+cron {arg59} script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw, timeout=1200, enable= {arg60}, tag=小餐霸王餐, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Xiaocan.png
+# 杰士邦
+cron {arg61} script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, timeout=1200, enable= {arg62}, tag=杰士邦, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Jissbon.png
+# 泡泡玛特
+cron {arg63} script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js, timeout=1200, enable= {arg64}, tag=泡泡玛特, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/POPMART‌.png
+# 甬派
+cron {arg65} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongPai/YongPai.js, timeout=1200, enable= {arg66}, tag=甬派, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Yongpai.png
+# 望潮
+cron {arg67} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WangChao/WangChao.js, timeout=1200, enable= {arg68}, tag=望潮, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Wangchao.png
+# 大潮
+cron {arg69} script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/DaChao/DaChao.js, timeout=1200, enable= {arg70}, tag=大潮, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Dachao.png
+# iios
+cron {arg71} script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/AppleID.js, timeout=1200, enable= {arg72}, tag=iios, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/AppleID.png
+# 中国电信
+cron {arg73} script-path=https://github.com/ChinaTelecomOperators/ChinaTelecom/releases/download/Prerelease-Alpha/Tele_Cellular_Auto.js, timeout=1200, enable= {arg74}, tag=中国电信, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/ChinaTelecom.png
+# 网上国网
+cron {arg75} script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js, timeout=1200, enable= {arg76}, tag=网上国网, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/SGCCOnline.png
+
+[MITM]
