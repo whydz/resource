@@ -16,7 +16,7 @@ iios: 每日签到、观看教程
 BoxJs订阅地址: 
 https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/Set.json
 [Script]
-cron "0 7 * * *" script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/iios.js, tag=AppleID日常任务
+cron "0 7 * * *" script-path=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/script/iios.js, tag=iios日常任务
 
 
 ====================================
