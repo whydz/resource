@@ -1,5 +1,5 @@
-#!name = 定时任务
-#!desc = 大吉大利
+#!name = CronJob
+#!desc = 定时任务
 #!openurl = 
 #!author = whydz
 #!tag = 脚本
