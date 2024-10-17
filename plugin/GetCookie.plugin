@@ -39,7 +39,7 @@ arg25 = switch,false,true,tag=奶茶
 arg26 = switch,false,true,tag=习酒
 arg27 = switch,false,true,tag=毛铺草本荟
 arg28 = switch,false,true,tag=建行生活
-arg29 = switch,false,true,tag=小餐霸王餐
+arg29 = switch,false,true,tag=小蚕霸王餐
 arg30 = switch,false,true,tag=杰士邦
 arg31 = switch,false,true,tag=泡泡玛特
 
@@ -100,7 +100,7 @@ http-response ^https:\/\/xcx\.exijiu\.com\/anti-channeling\/public\/index.php\/a
 http-response ^https:\/\/mpb\.jingjiu\.com\/proxy-he\/api\/user script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/MPCBH/MPCBH.js, requires-body=true, timeout=1200, enabled={arg27}, tag=毛铺草本荟, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Maopu.png
 # 建行生活
 http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, requires-body=true, timeout=1200, enabled={arg28}, tag=建行生活, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/CCBLife.png
-# 小餐霸王餐
+# 小蚕霸王餐
 http-response ^https:\/\/gw\.xiaocantech\.com\/rpc script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw, requires-body=true, timeout=1200, enabled={arg29}, tag=小蚕霸王餐, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Xiaocan.png
 # 杰士邦
 http-response ^https:\/\/xh-vip-api\.a-touchin\.com\/mp\/user\/info script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, requires-body=true, timeout=1200, enabled={arg30}, tag=杰士邦, img-url=https://raw.githubusercontent.com/whydz/resource/refs/heads/main/icon/app/Jissbon.png
