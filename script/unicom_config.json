@@ -1,0 +1,18 @@
+{
+  "phones": [
+    {"number": "18640396636"},
+    {"number": "18041354547"}
+  ],
+  "config": {
+    "proxyApiUrls": [
+      "https://service.ipzan.com/core-extract?num=1&no=20241211818388718820&minute=10&format=txt&area=330000&repeat=1&protocol=1&pool=ordinary&mode=whitelist&secret=m44orl3kji3dbv8"
+    ],
+    "TQ120": 7.0,
+    "activeId": 202405,
+    "480taskId": 1001,
+    "360taskId": 1002,
+    "240taskId": 1003,
+    "120taskId": 1004,
+    "15taskId": 1005
+  }
+}
